@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+</head>
+<body>
+
+<script>
+    var x = [2, 7, 5, 4];
+    var n = x.length;
+    var max = x[0];
+    var sumOfSquares = 0;
+    var Y = [];
+
+    // Finding the largest number in the array x
+    for (var i = 0; i < n; i++) {
+        max = Math.max(max, x[i]);
+        sumOfSquares += x[i] * x[i];
+    }
+
+    // Calculating R
+    var R = Math.sqrt(n * sumOfSquares);
+
+    // Calculating Y for each element in x
+    for (var i = 0; i < n; i++) {
+        Y[i] = Math.sqrt(R + max / x[i]);
+    }
+
+    document.write("<br>Najveći broj u polju X: " + max + "<br>");
+
+    // Displaying results for Y
+    document.write("<br>Y: <br>");
+    for (var i = 0; i < Y.length; i++) {
+        document.write(Y[i].toFixed(2) + '<br>');
+    }
+
+    // Displaying the original array x
+    document.write("<br>X: <br>");
+    for (var i = 0; i < x.length; i++) {
+        document.write(x[i] + '<br>');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/*
+Theme Name: Policija Tema
+Author: Matej Zec
+Description: KV policija
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pol
+*/
+
+.logged-in .navbar-custom {
+    top: 20px;
+}
+
+
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: row;
+    align-content: flex-start;
+    padding-left: 65px;
+    /*justify-content: space-around;*/
+   
+  }
+
+  .flex-container > div {
+  
+  
+  margin: 20px;
+  
+}
+
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
+    align-content: flex-start;
+    /*justify-content: space-around;*/
+   
+}
+
+.flex-container1 > div {
+    margin: 20px;  
+}
+
+
+#mainMenu
+{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    
+}
+
+#fp_content
+{
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+#polView
+{
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+
+
